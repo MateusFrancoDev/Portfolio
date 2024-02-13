@@ -1,0 +1,25 @@
+header {
+  padding: 40px 4%;
+}
+
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-logo {
+  display: flex;
+  align-items: center;
+  
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+
+
+
