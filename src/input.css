@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .neon {
+    @apply rounded-full border-azul-200 bg-gradient-to-b from-azul-200 to-azul-400;
+    box-shadow: 0 1px 4px 1px theme(colors.azul.200/25%),
+      inset 0px -1px 2px theme(colors.azul.200);
+  }
+  .btn {
+    @apply rounded-full border-azul-200 bg-gradient-to-b from-azul-200 to-azul-400 px-5 py-2 text-azul-900 transition hover:contrast-200;
+    box-shadow: 0 1px 4px 1px theme(colors.azul.200/25%),
+      inset 0px -1px 2px theme(colors.azul.200);
+  }
+
+  .input {
+    @apply rounded-md border-2 border-azul-800 bg-[#022759] p-2 text-white focus:outline-none focus:ring-2 focus:ring-azul-400 focus:border-azul-900 placeholder:text-azul-900;
+  }
+  .radial-gradient {
+    background-image: radial-gradient(
+      50% 100% at 50% 0%,
+      theme(colors.azul.700),
+      0% theme(colors.azul.900) 100%
+    );
+  }
+  /* Estilos personalizados para o scrollbar quase invisível */
+  .custom-scrollbar {
+    overflow-x: auto; /* Garante que o overflow horizontal esteja ativo */
+    scrollbar-width: thin; /* Define a largura do scrollbar para Firefox */
+    scrollbar-color: rgba(0, 11, 74, 0.5) transparent; /* Cor do "thumb" e do fundo */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Largura do scrollbar */
+    height: 8px; /* Altura do scrollbar */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* Fundo do scrollbar invisível */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(
+      0,
+      11,
+      74,
+      0.5
+    ); /* Cor do "thumb" do scrollbar com opacidade */
+    border-radius: 10px; /* Bordas arredondadas */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(
+      0,
+      11,
+      79,
+      0.85
+    ); /* Cor do "thumb" ao passar o mouse */
+  }
+}

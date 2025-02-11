@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-bt" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/logo.png" type="image/x-icon" />
+  <title> Portfólio | Mateus Franco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet"/>
+</head>
+<body class=" bg-[url(./img/background.svg)]  md:bg-cover md:bg-no-repeat font-sans">
+  <div class="container mt-4 flex justify-center md:justify-star">
+    <div class="inline-flex items-center rounded-md bg-zinc-900">
+      <span class="size-2 neon block relative -left-1"></span>
+    <div class="flex text-white divide-x-2 divide-zinc-400">
+      <div class="px-4 py-2 capitalize" id="dia">segunda</div>
+      <div class="px-4 py-2" id="temperatura">25°</div>
+      <div class="px-4 py-2" id="tempo">🌦️</div>
+    </div>
+  </div>
+</div>
+
+<header class="container flex justify-between gap-8 py-8">
+  <a href="./">
+    <img src="./img/logo.svg" alt="Forrest" />
+  </a>
+  <nav id="mobile-menu" class="lg:block hidden items-center z-40 max-lg:fixed max-lg:w-full max-lg:inset-0">
+    <div class="fixed lg:hidden inset-0  backdrop-blur-md"></div>
+    <ul class="text-white text-2xl max-lg:divide-y-2 max-lg:divide-white/10 max-lg:absolute max-lg:p-8 max-lg:w-full max-lg:z-50 lg:text-xl lg:flex lg:flex-wrap lg:gap-8">
+      <li class="animate-slide-in opacity-0 animate-1">
+        <a class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-azul-400/10 lg:hover:underline lg:hover:underline-offset-8" href="#experiencias">Sobre</a>
+      </li>
+      <li class="animate-slide-in opacity-0 animate-2">
+        <a class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8" href="#projeto">Projeto</a>
+      </li>
+      <li class="animate-slide-in opacity-0 animate-3"> 
+        <a class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8" href="#tecnologia">Tecnologia</a>
+      </li>
+      <li class="animate-slide-in opacity-0 animate-4">
+        <a class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-azul-300/10 lg:hover:underline lg:hover:underline-offset-8" href="#contato">Contato</a>
+      </li>
+    </ul>
+  </nav>
+  <button id="mobile-button" class=" btn flex items-center gap-3 text-azul-950 py-1 rounded-full lg:hidden">Menu
+    <span class="h-3 w-4 flex flex-col justify-between *:h-0.5 *:rounded-md *:bg-azul-800">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+</header>
+
+<main class="container flex items-center justify-center min-h-screen">
+  <div class="text-white bg-gradient-to-t from-azul-950/10 pt-16 px-8 pb-8 rounded-2xl overflow-hidden max-sm:px-4">
+    
+    <!-- Conteúdo principal -->
+    <div class="flex flex-col sm:flex-col-reverse sm:p-9 sm:justify-center sm:items-center w-full">
+      
+      <div class="flex justify-center items-center sm:justify-self-end sm:mx-auto">
+        <img src="./img/perfil2.png" alt="Imagem" class="w-full max-w-[700px] sm:max-w-[300px] object-contain">
+      </div>
+
+      <!-- Texto e botões -->
+      <div class="text-center py-20">
+        <h1 id="typing-effect" class="font-serif text-balance py-4 p-50 text-4xl sm:text-6xl ">
+          Front-end <span class="text-blue-800">Developer</span>
+        </h1>
+        <h2 class="mt-5 text-zinc-300 md:text-2xl">
+          Bem-vindo ao meu portfólio, Meu nome é Mateus. Sou um desenvolvedor apaixonado com um forte desejo de aprender, crescer e contribuir para projetos emocionantes.
+        </h2>
+        <div class="rounded-xl py-5 flex justify-center gap-5">
+          <a class="btn bg-[url('./img/linkedin-icon-2.svg')] bg-no-repeat bg-cover w-[50px] h-[50px]" href="https://www.linkedin.com/in/mateus-franco-dev/"></a>
+          <a class="btn bg-[url('./img/github-icon-2.svg')] bg-no-repeat bg-cover w-[50px] h-[50px]" href="https://github.com/MateusFrancoDev"></a>
+          <a class="btn bg-[url('./img/pdf-svg.svg')]  bg-no-repeat bg-cover w-[50px] h-[50px]" href="./img/Mateus Franco 2025 2.pdf"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+
+
+<section id="experiencias" class="container mb-12 sm:mb-16 grid sm:grid-cols-2 gap-8 py-8">
+  <div class="bg-azul-950/20 -6 sm:p-8 rounded-l-md ">
+    <p class="mb-4 text-center text-azul-200 uppercase tracking-widest text-sm">SOBRE</p>
+    <h2 class="mb-8 font-serif text-balance text-center text-white text-3xl sm:text-4xl lg:text-5xl capitalize">Experiências & Hobbies
+    </h2>
+    <h3 class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width] ">🔥 Desenvolvedor apaixonado por tecnologia</h3>
+    <p class="mb-8 text-balance text-gray-400 pl-10 md:items-start">Criando interfaces modernas e performáticas para web e mobile.</p>
+    <h3 class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]">📚 Formação Acadêmica</h3>
+    <p class="mb-8 text-balance text-gray-400 pl-10">Tecnólogo em Análise e Desenvolvimento de Sistemas – UNINOVE</p>
+
+    <h3 class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]">💡 Experiência Profissional</h3>
+    <p class="mb-8 text-balance text-gray-400 pl-10">💻 Desenvolvimento de interfaces responsivas e dinâmicas.<br>
+      ⚡ Implementação de filtros avançados e integração de APIs.<br>
+      🚀 Otimização de desempenho e acessibilidade.<br>
+      📱 Criação de aplicações mobile com React Native.</p>
+
+      <h3 class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]">
+        🏆 Principais Resultados
+        </h3>
+        <p class="mb-8 text-balance text-gray-400 pl-10 gap-2">
+          🐶 Cãobinado – Implementação de filtros avançados e melhorias na interface.<br>
+          📊 Dashboard 3M – Aprimoramento da experiência do usuário.<br>
+          💡 Projetos Pessoais – Dogs e Bikcraft usando React, Figma e APIs.
+        </p>
+        <h3 class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]">🏃‍♂️ Fora do Código</h3>
+        <p class="mb-8 text-balance text-gray-400 pl-10">🎞 Crítico de cinema nas horas vagas e atleta amador!</p>
+
+        <h3 class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:neon hover:before:w-10 before:transition-[width]">👨‍💻 Confira meus projetos! 🚀</h3>
+
+  </div>
+  
+  <div class="flex flex-col grid-rows-2 gap-4">
+    <div class=" group relative cursor-pointer overflow-hidden rounded-xl">
+      <img class="size-full object-cover transition-transform group-hover:scale-110" src="./img/perfil3 (2).png" alt="canoagem" />
+      <div class="absolute flex items-end p-4 inset-0 transition-opacity bg-gradient-to-t from-verde-950/80 opacity-0 group-hover:opacity-100">
+      </div>
+    </div>
+
+</section>
+
+<!-- Projetos -->
+
+<section id="projeto" class="grid-section galeria w-full max-h-[80vh] overflow-hidden select-none" data-anime="scroll">
+  <h2 class="mb-8 mx-auto font-serif text-balance text-center max-w-screen-md text-white text-4xl sm:text-6xl">
+    PROJETOS
+  </h2>
+
+  <div id="gallery" class="flex flex-1 gap-4 sm:gap-8 overflow-x-auto pb-4 snap-x snap-mandatory custom-scrollbar scroll-smooth cursor-grab active:cursor-grabbing">
+    <div class="snap-center flex-none cursor-pointer w-[90vw] sm:w-[800px] h-[50vw] sm:h-[400px] bg-[url(./img/dogs.png)] bg-cover rounded-xl relative group">
+      <div class="info absolute inset-0 bg-black bg-opacity-50 text-white p-4 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div>
+          <h3 class="text-azul-300 text-2xl font-bold">Dogs</h3>
+          <p class="text-gray-300 text-sm pointer-events-none text-justify sm:text-left break-words max-w-xs sm:max-w-none">
+            Utilizando React para a interface do usuário e aproveitando a poderosa API, esse foi meu primeiro projeto com React
+          </p>  
+        </div>
+        <a href="https://github.com/MateusFrancoDev/DOGS" target="_blank" class="self-end btn mt-4">Repositório</a>
+      </div>
+    </div>
+
+    <div class="snap-center flex-none cursor-pointer w-[90vw] sm:w-[800px] h-[50vw] sm:h-[400px] bg-[url(./img/caobinado.png)] bg-cover rounded-xl relative group">
+      <div class="info absolute inset-0 bg-black bg-opacity-50 text-white p-4 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div>
+          <h3 class="text-azul-300 text-2xl font-bold">Cãobinado</h3>
+          <p class="text-gray-300 text-sm pointer-events-none">
+            O projeto Cãobinado é uma plataforma inovadora que utiliza Next.js foi feita para doação de cães para empresa Elanco, trabalhei nele quando estava na empresa IEXY
+
+          </p>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="snap-center flex-none cursor-pointer w-[90vw] sm:w-[800px] h-[50vw] sm:h-[400px] bg-[url(./img/star.png)] bg-cover rounded-xl relative group">
+      <div class="info absolute inset-0 bg-black bg-opacity-50 text-white p-4 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div>
+          <h3 class="text-azul-300 text-2xl font-bold">Star Wars</h3>
+          <p class="text-gray-300 text-sm pointer-events-none">
+            Um projeto divertido com JavaScript! Explore os personagens de star wars.
+          </p>
+        </div>
+        <a href="https://github.com/MateusFrancoDev/STAR_WARS" target="_blank" class="self-end btn mt-4">Repositório</a>
+      </div>
+    </div>
+
+    <div class="snap-center flex-none cursor-pointer w-[90vw] sm:w-[800px] h-[50vw] sm:h-[400px] bg-[url(./img/convite.png)] bg-cover rounded-xl relative group">
+      <div class="info absolute inset-0 bg-black bg-opacity-50 text-white p-4 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div>
+          <h3 class="text-azul-300 text-2xl font-bold">Convite</h3>
+          <p class="text-gray-300 text-sm pointer-events-none">
+            Este projeto foi desenvolvido como um estudo para aprimorar minhas habilidades em desenvolvimento web, explorando tecnologias modernas e boas práticas,
+            foi o meu primeiro contato com NestJs.
+          </p>
+        </div>
+        <a href="https://github.com/MateusFrancoDev/Convite" target="_blank" class="self-end btn mt-4">Repositório</a>
+      </div>
+    </div>
+
+    <div class="snap-center flex-none cursor-pointer w-[90vw] sm:w-[800px] h-[50vw] sm:h-[400px] bg-[url(./img/3m.png)] bg-cover rounded-xl relative group">
+      <div class="info absolute inset-0 bg-black bg-opacity-50 text-white p-4 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div>
+          <h3 class="text-azul-300 text-2xl font-bold">3M</h3>
+          <p class="text-gray-300 text-sm pointer-events-none">
+            Contribuí para melhorias na interface de um dashboard corporativo, otimizando a experiência do usuário, Refatorei
+            componentes e implementei novos recursos, garantindo maior usabilidade e eficiência no acesso a dados.
+            Colaborei com a equipe de design para ajustar elementos visuais e garantir a consistência da identidade visual da
+            marca.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <h2 class="aviso text-center text-white text-[10px] mt-8">
+    Explore meus projetos! Ao clicar em cada um deles, você terá acesso ao código fonte no GitHub. Os projetos desenvolvidos para empresas, por questões de confidencialidade.
+  </h2>
+</section>
+
+<!-- Script do Slide -->
+
+<script>
+  const gallery = document.getElementById("gallery");
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  gallery.addEventListener("mousedown", (e) => {
+    isDown = true;
+    gallery.classList.add("active");
+    startX = e.pageX - gallery.offsetLeft;
+    scrollLeft = gallery.scrollLeft;
+  });
+
+  gallery.addEventListener("mouseleave", () => {
+    isDown = false;
+    gallery.classList.remove("active");
+  });
+
+  gallery.addEventListener("mouseup", () => {
+    isDown = false;
+    gallery.classList.remove("active");
+  });
+
+  gallery.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - gallery.offsetLeft;
+    const walk = (x - startX) * 2; // Ajuste para maior sensibilidade
+    gallery.scrollLeft = scrollLeft - walk;
+  });
+</script>
+
+
+<!-- Ciclo Natural -->
+
+<section id="tecnologia" class="container mb-12 sm:mb-16 py-6">
+  <h2 class="mb-8 mx-auto font-serif text-balance text-center max-w-screen-md text-white text-4xl sm:text-6xl p-10">Tecnologias</h2>
+  <ul class="flex flex-col items-center justify-center content-center py-4 max-sm:divide-y-2 max-sm:divide-verde-900 *:p-4 sm:flex-row sm:gap-8 sm:border-b-2 sm:border-t-2 sm:border-azul-900 sm:py-8 *:*:h-16">
+    <li><img src="./img/react.svg" class="h-16 w-auto" alt="Caravan" /></li>
+    <li><img src="./img/native.svg" class="h-16 w-auto" alt="Caravan" /></li>
+    <li><img src="./img/tailwind.svg" class="h-16 w-auto" alt="Wildbeast" /></li>
+    <li><img src="./img/node.svg" class="h-16 w-auto" alt="Lescone" /></li>
+    <li><img src="./img/nextjs.svg" class="h-16 w-auto" alt="Surfbot" /></li>
+    <li><img src="./img/typescript.svg" class="h-16 w-auto" alt="Surfbot" /></li>
+  </ul>
+</section>
+
+<!-- Contato -->
+
+
+<section id="contato" class="container mb-21 sm:mb-16 grid lg:grid-cols-2 gap-8">
+  <div>
+    <h1 class="font-serif text-4xl text-azul-300 mb-4">Entre em Contato</h1>
+
+    <div class="grid gap-4">
+      <div>
+        <span class="h-0.5 w-6 neon inline-block"></span>
+        <h2 class="mb-2 text-2xl text-azul-300 font-serif">Endereço</h2>
+        <p class="text-gray-300">Osasco-SP</p>
+      </div>
+
+      <div>
+        <span class="h-0.5 w-6 neon inline-block"></span>
+        <h2 class="mb-2 text-2xl text-azul-300 font-serif">Email</h2>
+        <p class="text-gray-300">mateusfranc2@gmail.com</p>
+      </div>
+
+      <div>
+        <span class="h-0.5 w-6 neon inline-block"></span>
+        <h2 class="mb-2 text-2xl text-azul-300 font-serif">Telefone</h2>
+        <p class="text-gray-300">11 94634-0190</p>
+      </div>
+
+    </div>
+  </div>
+  <form                 
+  action="https://formspree.io/f/mjvqlpnb"
+  method="POST"
+  id="contact-form"
+  target="_blank" class="grid gap-4 rounded-xl bg-azul-950 shadow-2xl p-4 lg:p-8">
+    <div class="grid gap-1">
+      <label class="text-white" for="nome">Nome</label>
+      <input id="nome" name="nome" class="input" placeholder="Nome Completo" type="text">
+    </div>
+
+    <div class="grid gap-4  sm:grid-cols-2">
+      <div class="grid gap-1">
+        <label class="text-white" for="email">Email</label>
+        <input id="email" name="email" class="input" placeholder="Email" type="email">
+      </div>
+
+      <div class="grid gap-1">
+        <label class="text-white" for="telefone">Telefone</label>
+        <input id="telefone" name="telefone" class="input" placeholder="(11) 99999-9999" type="text" maxlength="15">
+      </div>
+    </div>
+
+    <div class="grid gap-1">
+      <label class="text-white" for="mensagem">Mensagem</label>
+      <textarea rows="5" id="mensagem" name="mensagem"  class="input resize-none" placeholder="Mensagem" type="text"></textarea>
+    </div>
+
+    <button class=" place-self-start btn">Enviar Email</button>
+
+  </form>
+</section>
+
+<!-- Parceiros -->
+
+
+
+  <div
+    class="text-gray-400 flex items-center justify-between gap-8 text-sm max-sm:flex-col-reverse"
+  >
+    <p>© 2025 Mateus Franco. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  const temperatura = document.getElementById('temperatura');
+  const tempo = document.getElementById('tempo');
+  const dia = document.getElementById('dia');
+
+  const random = Math.floor(Math.random() * 10) + 20;
+  temperatura.innerText = `${random}°`;
+  tempo.innerText = random < 25 ? `🌦️ ${random + 5}%`: `☀️`;
+
+  const date = new Date();
+  dia.innerText = date.toLocaleDateString("pt-BR", {
+    weekday: 'long',
+  }) .replace ('-feira', '');
+
+  
+  document.addEventListener("DOMContentLoaded", function () {
+  const mobileButton = document.getElementById("mobile-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (mobileButton && mobileMenu) {
+    mobileButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      mobileMenu.classList.toggle("flex");
+      mobileMenu.classList.toggle("absolute");
+      mobileMenu.classList.toggle("top-0");
+    });
+
+    mobileMenu.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("flex", "absolute", "top-0");
+    });
+  }
+});
+document.getElementById('telefone').addEventListener('input', function (e) {
+    let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não for número
+
+    if (value.length > 11) value = value.slice(0, 11); 
+
+    if (value.length > 10) {
+      e.target.value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
+    } else if (value.length > 6) {
+      e.target.value = `(${value.slice(0, 2)}) ${value.slice(2, 6)}-${value.slice(6, 10)}`;
+    } else if (value.length > 2) {
+      e.target.value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+    } else if (value.length > 0) {
+      e.target.value = `(${value}`;
+    }
+  });
+</script>
+
+</body>
+</html>
